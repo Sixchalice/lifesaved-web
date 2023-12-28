@@ -6,14 +6,16 @@ export default function Home() {
     <main>
         <div>
             <h1>Hello</h1>
-            <div className="border bg-amber-500 rounded-2xl w-fit px-4 py-1">
+            <div className="border bg-blue-400 rounded-2xl w-fit px-4 py-1">
                 <Link href={"/login"}
-                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      className="font-medium text-black hover:underline"
                 >
-                    Go To Login
-
+                    Login
                 </Link>
             </div>
+
+            <br/>
+
         </div>
     </main>
   )
