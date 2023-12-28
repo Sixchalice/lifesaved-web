@@ -4,6 +4,7 @@ import { UserWhereUniqueInput } from "../user/UserWhereUniqueInput";
 
 export type FolderWhereInput = {
   id?: StringFilter;
+  name?: StringFilter;
   tasks?: TaskListRelationFilter;
   uid?: UserWhereUniqueInput;
 };

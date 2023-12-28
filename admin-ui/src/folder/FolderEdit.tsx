@@ -4,6 +4,7 @@ import {
   Edit,
   SimpleForm,
   EditProps,
+  TextInput,
   ReferenceArrayInput,
   SelectArrayInput,
   ReferenceInput,
@@ -17,6 +18,7 @@ export const FolderEdit = (props: EditProps): React.ReactElement => {
   return (
     <Edit {...props}>
       <SimpleForm>
+        <TextInput label="name" source="name" />
         <ReferenceArrayInput
           source="tasks"
           reference="Task"

@@ -4,6 +4,7 @@ import {
   Create,
   SimpleForm,
   CreateProps,
+  TextInput,
   ReferenceArrayInput,
   SelectArrayInput,
   ReferenceInput,
@@ -17,6 +18,7 @@ export const FolderCreate = (props: CreateProps): React.ReactElement => {
   return (
     <Create {...props}>
       <SimpleForm>
+        <TextInput label="name" source="name" />
         <ReferenceArrayInput
           source="tasks"
           reference="Task"

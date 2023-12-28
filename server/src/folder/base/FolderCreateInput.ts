@@ -11,13 +11,21 @@ https://docs.amplication.com/how-to/custom-code
   */
 import { InputType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
+import { IsString, ValidateNested, IsOptional } from "class-validator";
 import { TaskCreateNestedManyWithoutFoldersInput } from "./TaskCreateNestedManyWithoutFoldersInput";
-import { ValidateNested, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 import { UserWhereUniqueInput } from "../../user/base/UserWhereUniqueInput";
 
 @InputType()
 class FolderCreateInput {
+  @ApiProperty({
+    required: true,
+    type: String,
+  })
+  @IsString()
+  @Field(() => String)
+  name!: string;
+
   @ApiProperty({
     required: false,
     type: () => TaskCreateNestedManyWithoutFoldersInput,
