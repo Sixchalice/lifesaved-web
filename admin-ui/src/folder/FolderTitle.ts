@@ -1,7 +1,7 @@
 import { Folder as TFolder } from "../api/folder/Folder";
 
-export const FOLDER_TITLE_FIELD = "id";
+export const FOLDER_TITLE_FIELD = "name";
 
 export const FolderTitle = (record: TFolder): string => {
-  return record.id?.toString() || String(record.id);
+  return record.name?.toString() || String(record.id);
 };

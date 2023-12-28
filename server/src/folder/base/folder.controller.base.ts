@@ -60,6 +60,7 @@ export class FolderControllerBase {
       select: {
         createdAt: true,
         id: true,
+        name: true,
 
         uid: {
           select: {
@@ -91,6 +92,7 @@ export class FolderControllerBase {
       select: {
         createdAt: true,
         id: true,
+        name: true,
 
         uid: {
           select: {
@@ -123,6 +125,7 @@ export class FolderControllerBase {
       select: {
         createdAt: true,
         id: true,
+        name: true,
 
         uid: {
           select: {
@@ -170,6 +173,7 @@ export class FolderControllerBase {
         select: {
           createdAt: true,
           id: true,
+          name: true,
 
           uid: {
             select: {
@@ -210,6 +214,7 @@ export class FolderControllerBase {
         select: {
           createdAt: true,
           id: true,
+          name: true,
 
           uid: {
             select: {
